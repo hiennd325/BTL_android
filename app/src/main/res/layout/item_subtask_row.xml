@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <CheckBox
+        android:id="@+id/cb_subtask"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="12dp"
+        android:button="@null"
+        android:background="@drawable/selector_checkbox" />
+
+    <TextView
+        android:id="@+id/tv_subtask_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Get a notebook"
+        android:textSize="14sp"
+        android:textColor="@color/text_black" />
+
+    <!-- Optional remove button (visible in detail screen, hidden in today list) -->
+    <ImageView
+        android:id="@+id/iv_delete_subtask"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_close"
+        android:contentDescription="@string/delete"
+        android:visibility="gone" />
+
+</LinearLayout>

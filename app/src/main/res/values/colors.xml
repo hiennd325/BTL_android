@@ -1,10 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <!-- Basic / Brand -->
+    <color name="primary_dark">#2C2A29</color>
+    <color name="accent_black">#1C1C1E</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_light">#F8F9FA</color>
+    <color name="text_black">#1C1C1E</color>
+    <color name="text_gray">#8E8E93</color>
+    <color name="text_light_gray">#AEAEB2</color>
+    <color name="divider_color">#F0F0F2</color>
+    <color name="checkbox_unchecked">#D1D1D6</color>
+    <color name="checkbox_checked">#8E8E93</color>
+    <color name="delete_red">#FF3B30</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- Category: Health -->
+    <color name="cat_health_bg">#EAF2FF</color>
+    <color name="cat_health_accent">#4C7DFF</color>
+    <color name="cat_health_badge_bg">#DFEBFE</color>
+    <color name="cat_health_badge_text">#3D68E0</color>
+
+    <!-- Category: Work -->
+    <color name="cat_work_bg">#EAF7EE</color>
+    <color name="cat_work_accent">#34C759</color>
+    <color name="cat_work_badge_bg">#DCF3E3</color>
+    <color name="cat_work_badge_text">#2E9D47</color>
+
+    <!-- Category: Mental Health -->
+    <color name="cat_mental_bg">#FBEBF2</color>
+    <color name="cat_mental_accent">#D84C8B</color>
+    <color name="cat_mental_badge_bg">#F8DEEC</color>
+    <color name="cat_mental_badge_text">#C23B77</color>
+
+    <!-- Category: Others -->
+    <color name="cat_others_bg">#F6F4EE</color>
+    <color name="cat_others_accent">#8A7D71</color>
+    <color name="cat_others_badge_bg">#EEEBE0</color>
+    <color name="cat_others_badge_text">#766B60</color>
 </resources>

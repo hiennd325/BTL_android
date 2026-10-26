@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="56dp"
+    android:gravity="top">
+
+    <!-- Hour Label (e.g. 6:00, 7:00) -->
+    <TextView
+        android:id="@+id/tv_hour_label"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="6:00"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:gravity="start" />
+
+    <!-- Event block container -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_timeline_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/cat_health_bg"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <!-- Colored circle dot -->
+                <View
+                    android:id="@+id/view_event_dot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/bg_circle_dot"
+                    android:layout_marginEnd="10dp" />
+
+                <!-- Event title -->
+                <TextView
+                    android:id="@+id/tv_event_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Drink 8 glasses of water"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_black" />
+
+                <!-- Duration text (e.g. 1h, 4h) -->
+                <TextView
+                    android:id="@+id/tv_event_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="1h"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</LinearLayout>

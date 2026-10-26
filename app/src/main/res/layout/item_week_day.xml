@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_day_box"
+    android:layout_width="52dp"
+    android:layout_height="64dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/bg_day_normal"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tv_day_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THU"
+        android:textSize="11sp"
+        android:textColor="@color/text_gray"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/tv_day_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="26"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_black" />
+
+</LinearLayout>

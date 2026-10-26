@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background_white">
+
+    <LinearLayout
+        android:id="@+id/layout_task_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:foreground="?attr/selectableItemBackground">
+
+        <!-- Custom Checkbox -->
+        <CheckBox
+            android:id="@+id/cb_task"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="14dp"
+            android:button="@null"
+            android:background="@drawable/selector_checkbox" />
+
+        <!-- Main Task Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Task Title -->
+            <TextView
+                android:id="@+id/tv_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drink 8 glasses of water"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_black"
+                android:lineSpacingExtra="2dp" />
+
+            <!-- Category Badge Pill -->
+            <TextView
+                android:id="@+id/tv_task_category_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_category_badge"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="HEALTH"
+                android:textAllCaps="true"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/cat_health_badge_text" />
+
+            <!-- Subtasks Container (Indented below) -->
+            <LinearLayout
+                android:id="@+id/layout_subtasks_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+</LinearLayout>

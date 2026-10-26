@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">BTL_android</string>
+    <string name="app_name">To-Do App</string>
+    <string name="nav_today">Today</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="cat_health">Health</string>
+    <string name="cat_work">Work</string>
+    <string name="cat_mental">Mental Health</string>
+    <string name="cat_others">Others</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="add_subtask">+ Add subtask</string>
+    <string name="task_title_hint">Enter task title…</string>
 </resources>
